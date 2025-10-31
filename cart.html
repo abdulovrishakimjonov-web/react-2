@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,37 +7,44 @@
     <title>Интернет Магазин Asaxiy</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <style>
-      .swiper-button-next::after,
-      .swiper-button-prev::after {
-        font-size: 18px !important;
-        color: #000 !important;
-        font-weight: bold;
-      }
-      @media (max-width: 548px) {
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-          font-size: 15px !important;
-        }
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
     </style>
   </head>
-  <body>
-    <header class="bg-white md:border-b border-gray-200 p-2 shadow-md sticky top-0 z-50">
+  <body class="bg-[#a8e8f17d]">
+    <header
+      class="bg-white md:border-b border-gray-200 p-2 shadow-md sticky top-0 z-50"
+    >
       <div class="p-[0px_40px] flex items-center justify-between">
         <input type="checkbox" id="menu-toggle" class="peer hidden" />
         <label for="menu-toggle" class="md:hidden text-[30px] cursor-pointer">
           <i class="fas fa-bars text-[#2855de]"></i>
         </label>
-        <div class="fixed top-0 left-0 h-full w-[90%] max-w-[320px] bg-[#ffffff] text-white flex flex-col items-start justify-start pl-[20px] pr-[20px] pt-[20px] pb-[40px] gap-8 transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-500 ease-in-out peer-checked:shadow-[0_0_20px_rgba(0,0,0,0.4)] z-[999] overflow-y-auto">
+        <div
+          class="fixed top-0 left-0 h-full w-[90%] max-w-[320px] bg-[#ffffff] text-white flex flex-col items-start justify-start pl-[20px] pr-[20px] pt-[20px] pb-[40px] gap-8 transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-500 ease-in-out peer-checked:shadow-[0_0_20px_rgba(0,0,0,0.4)] z-[999] overflow-y-auto"
+        >
           <div
             class="flex items-center justify-between w-full border-b border-gray-400"
           >
             <a href="./index.html">
               <img
-                src="./img/article-original.png"
+                src="./images/photo_2025-10-30_14-26-21.jpg"
                 alt=""
                 class=""
               />
@@ -427,98 +435,13 @@
         </div>
       </div>
     </header>
-
-    <section class=" flex w-[90%] justify-center items-center ">
-      <div class=" w-[70%] max-w-[1550px] flex mx-auto">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div
-              class="w-full z-10 h-full flex items-center justify-center rounded-[20px] overflow-hidden">
-              <img src="/img/68fa069d3b063.jpg.webp"alt="Баннер"class="w-full h-full object-contain"/>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="w-full z-10 h-full flex items-center justify-center rounded-[20px] overflow-hidden"
-            >
-              <img
-                src="/img/68f8e6df5fd4b.jpg.webp"
-                alt="Баннер"
-                class="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="w-full h-full flex z-10 items-center justify-center rounded-[20px] overflow-hidden"
-            >
-              <img
-                src="/img/68f8e628b716d.jpg.webp"
-                alt="Баннер"
-                class="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div
-          class="swiper-button-prev md:bg-white/30! bg-transparent md:backdrop-blur-sm! rounded-full! p-7! z-5 hover:bg-white/50! shadow-md transition scale-60! sm:scale-90!"
-        ></div>
-        <div
-          class="swiper-button-next md:bg-white/30! bg-transparent md:backdrop-blur-sm! rounded-full! p-7! z-5 hover:bg-white/50! shadow-md transition scale-60! sm:scale-90!"
-        ></div>
+    <section class="w-[90%] max-w-[1550px] mx-auto mt-10">
+      <h1 class="text-2xl font-semibold mb-4">Корзина</h1>
+      <div id="cart-items" class="grid grid-cols-3 gap-4"></div>
+      <div class="mt-5 text-right text-xl text-blue-500 font-bold">
+        Итого: <span id="cart-total">0 UZS</span>
       </div>
-      </div>
-      <div class="w-[340px] bg-white rounded-2xl p-5 border-2 border-gray-200">
-    <div class="flex">
-    <p class="font-bold bg-pink-600 w-[50px] p-1 rounded-lg h-7">-28%</p>
-    <img class="w-[170px]" src="./img/68132c8f344f1.jpg.webp" alt="">
-    </div>
-    <h2 class="text-[20px] text-black font-bold">HONOR 400 lite 5G 8/256 GB Velet  Grey Smartfoni</h2>
-    <a class="line-through text-slate-500 font-semibold flex items-center justify-between" href="">3 719 000 so`m <span class="text-pink-600 font-bold text-[20px]">799 000 so`m</span></a>
-    <div class="flex items-center justify-between mb-3">
-    <a class="text-zinc-700 bg-orange-100 p-1 rounded-lg font-semibold" href="">1 559 700 so`m x 12 oy</a>
-    <div>
-    <i class="fa-solid fa-star" style="color: #ee9f17;"></i>
-    <i class="fa-solid fa-star" style="color: #ee9f17;"></i>
-    <i class="fa-solid fa-star" style="color: #ee9f17;"></i>
-    <i class="fa-solid fa-star" style="color: #ee9f17;"></i>
-    <i class="fa-solid fa-star" style="color: #ee9f17;">5</i>
-    </div>
-    </div>
-    <button class="relative overflow-hidden flex justify-center p-2 cursor-pointer rounded-lg bg-[#006BFF] w-[300px] font-semibold group">
-    <span class="flex text-white items-center relative z-20">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="40px" fill="#F3F3F3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>Xoziroq harid qiling</span>
-    <span class="absolute left-0 top-0 h-full w-0 bg-blue-800 transition-all duration-500 group-hover:w-full"></span>
-    </button>
-  </div>
     </section>
-
-   
-
-    <section
-      id="products-section"
-      class="mt-20 w-[90%] max-w-[1550px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5"
-    ></section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        loop: false,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
     <script src="./main.js"></script>
     <script src="./cart.js"></script>
     <script src="./favorites.js"></script>
