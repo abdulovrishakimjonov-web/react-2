@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://clone-asaxiy-six.vercel.app/logo-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class=" sticky top-0  w-full shadow-black shadow-md bg-white z-50">
+        <div class="desktop-content">
+            <div class="container">
+                <div class="flex items-center gap-5 p-1">
+                    <div class="flex items-center gap-2">
+                        <img class="w-[140px]" src="./img/article-original.png" alt="">
+                        <button class="relative overflow-hidden flex justify-center cursor-pointer p-2 rounded-lg bg-[#006BFF] font-semibold group">
+                            <span class="flex text-white items-center relative z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="40px" fill="#F3F3F3">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                                </svg>
+                                Bo`limlar
+                            </span>
+                            <span class="absolute left-0 top-0 h-full w-0 bg-blue-800 transition-all duration-500 group-hover:w-full"></span>
+                        </button>
+                        <div class="flex w-[470px] rounded-lg overflow-hidden border-[#006BFF] border-2">
+                            <div class="flex items-center px-3 text-gray-500">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <input type="text" placeholder="Qdirish..." class="w-full p-2 cursor-pointer text-sm outline-none"/>
+                            <button class="bg-[#006BFF] hover:bg-blue-800 cursor-pointer placeholder:text-gray-500 text-white px-5 text-sm font-medium transition">Qdirish</button>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-11"> 
+                        <div class="flex flex-col items-center">
+                            <img class="w-[25px]" src="./img/compare_header.svg" alt="">
+                            <a class="text-[12px] hover:text-[#006BFF] text-gray-900" href="">Taqqoslash</a>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="w-[28px]" src="./img/payment.svg" alt="">
+                            <a class="text-[12px] hover:text-[#006BFF] text-gray-900" href="">To'lov</a>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="w-[27px]" src="./img/tracker.svg" alt="">
+                            <a class="text-[12px] hover:text-[#006BFF] text-gray-900" href="">Trek</a>
+                        </div>
+                        <div class="relative flex flex-col items-center">
+                        <a href="./index.html"><i class="fa-solid fa-cart-shopping hover:text-blue-600 text-[20px] text-black"></i></a>
+                        <span id="cartCount" class="absolute -top-1 right-[-10px] bg-blue-600 text-white text-[10px] px-[5px] py-[1px] rounded-full">0</span>
+                        <a class="text-[12px] hover:text-[#006BFF] text-gray-900" href="">Savatcha</a>
+                        </div>
+                        <div class="relative flex flex-col text-[20px] items-center">
+                        <i class="fa-regular fa-heart text-black hover:text-blue-600"></i>
+                        <span id="likeCount" class="absolute -top-1 right-[-10px] bg-blue-600 text-white text-[10px] px-[5px] py-[1px] rounded-full">0</span>
+                        <a class="text-[12px] hover:text-[#006BFF] text-gray-900" href="">Sevimlilar</a>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="w-[23px]" src="./img/language.svg" alt="">
+                            <a class="text-[12px] hover:text-[#006BFF] text-gray-900" href="">Русский</a>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="w-[18px]" src="./img/avatar.svg" alt="">
+                            <a class="text-[12px] hover:text-[#006BFF] text-gray-900" href="">Kirish</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-[0.5px] bg-zinc-200 mb-3"></div>
+            <div class="container">
+                <div class="flex items-center justify-between mb-">
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">Super narx</a>
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">0-0-6</a>
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">Talablar uchun yahshi</a>
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">Smartfonlar</a>
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">Maishiy texnika</a>
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">Kitoblar</a>
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">Telivizorlar</a>
+                    <a class="text-neutral-700 hover:text-[#006BFF] mb-3" href="">Noutbuklar</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-content">
+            <div class="container">
+                <div class="flex items-center justify-between py-3">
+                    <button id="mobileMenuBtn" class="p-2 hover:bg-gray-100 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#006BFF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </button>
+                    <img class="w-[120px]" src="./img/article-original.png" alt="Logo">
+                    <button id="mobileSearchBtn" class="p-2 hover:bg-gray-100 rounded-lg">
+                        <i class="fa-solid fa-magnifying-glass text-[#006BFF] text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileSearch" class="container pb-3 hidden">
+                <div class="flex rounded-lg overflow-hidden border-[#006BFF] border-2">
+                    <div class="flex items-center px-3 text-gray-500">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="поиск..." class="w-full p-2 text-sm outline-none"/>
+                    <button class="bg-[#006BFF] text-white px-4 text-sm">искат</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="overlay" class="overlay mobile-content fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+    <div id="mobileMenu" class="mobile-menu mobile-content fixed top-0 left-0 h-full w-[280px] bg-white z-50 shadow-2xl overflow-y-auto">
+        <div class="p-4">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-lg font-bold text-[#006BFF]">Меню</h2>
+                <button id="closeMobileMenu" class="p-2 hover:bg-gray-100 cursor-pointer rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#333">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="mb-6 p-3 bg-gray-50 rounded-lg flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#006BFF] rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-user text-white"></i>
+                </div>
+                <a href="" class="text-sm font-semibold text-[#006BFF]">Kirish</a>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-6">
+                <a href="" class="p-3 bg-gray-50 rounded-lg flex flex-col items-center gap-2 hover:bg-gray-100">
+                    <i class="fa-solid fa-shopping-cart text-[#006BFF] text-xl"></i>
+                    <span class="text-xs">Savatcha</span>
+                </a>
+                <a href="" class="p-3 bg-gray-50 rounded-lg flex flex-col items-center gap-2 hover:bg-gray-100">
+                    <i class="fa-solid fa-heart text-[#006BFF] text-xl"></i>
+                    <span class="text-xs">Sevimlilar</span>
+                </a>
+                <a href="" class="p-3 bg-gray-50 rounded-lg flex flex-col items-center gap-2 hover:bg-gray-100">
+                    <i class="fa-solid fa-credit-card text-[#006BFF] text-xl"></i>
+                    <span class="text-xs">To'lov</span>
+                </a>
+                <a href="" class="p-3 bg-gray-50 rounded-lg flex flex-col items-center gap-2 hover:bg-gray-100">
+                    <i class="fa-solid fa-truck text-[#006BFF] text-xl"></i>
+                    <span class="text-xs">Trek</span>
+                </a>
+            </div>
+
+            <div class="border-t pt-4">
+                <h3 class="font-semibold mb-3 text-sm text-gray-600">Категории</h3>
+                <div class="space-y-1">
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">Супер цена</a>
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">0-0-6</a>
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">Лучшее для студентов</a>
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">Смартфоны</a>
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">Бытовая техника</a>
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">Книги</a>
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">Телевизоры</a>
+                    <a href="" class="block p-3 hover:bg-gray-50 rounded-lg text-sm">Ноутбуки</a>
+                </div>
+            </div>
+
+            <div class="border-t mt-4 pt-4">
+                <a href="" class="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg">
+                    <i class="fa-solid fa-language text-[#006BFF]"></i>
+                    <span class="text-sm">Русский</span>
+                </a>
+                <a href="" class="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg">
+                    <i class="fa-solid fa-scale-balanced text-[#006BFF]"></i>
+                    <span class="text-sm">Сравнение</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- header end -->
+
+    <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+  <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+    <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">Shopping Cart</h2>
+
+    <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
+      <div class="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
+        <div id="shop" class="space-y-6">
+         
+        </div>
+      </div>
+      <div class="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full">
+        <div class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+          <p class="text-xl font-semibold text-gray-900 dark:text-white">Order summary</p>
+
+          <div class="space-y-4">
+            <div class="space-y-2">
+              <dl class="flex items-center justify-between gap-4">
+                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Original price</dt>
+                <dd class="text-base font-medium text-gray-900 dark:text-white">$7,592.00</dd>
+              </dl>
+
+              <dl class="flex items-center justify-between gap-4">
+                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Savings</dt>
+                <dd class="text-base font-medium text-green-600">-$299.00</dd>
+              </dl>
+
+              <dl class="flex items-center justify-between gap-4">
+                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Store Pickup</dt>
+                <dd class="text-base font-medium text-gray-900 dark:text-white">$99</dd>
+              </dl>
+
+              <dl class="flex items-center justify-between gap-4">
+                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Tax</dt>
+                <dd class="text-base font-medium text-gray-900 dark:text-white">$799</dd>
+              </dl>
+            </div>
+
+            <dl class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
+              <dt class="text-base font-bold text-gray-900 dark:text-white">Total</dt>
+              <dd class="text-base font-bold text-gray-900 dark:text-white">$8,191.00</dd>
+            </dl>
+          </div>
+
+          <a href="#" class="flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Proceed to Checkout</a>
+
+          <div class="flex items-center justify-center gap-2">
+            <span class="text-sm font-normal text-gray-500 dark:text-gray-400"> or </span>
+            <a href="#" title="" class="inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">
+              Continue Shopping
+              <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <script src="./main.js"></script>
+</body>
+</html>
