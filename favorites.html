@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет Магазин Asaxiy</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-[#a8e8f17d]">
+    <header class="bg-white md:border-b border-gray-200 p-2 shadow-md sticky top-0 z-50">
+  <div class="p-[0px_40px] flex items-center justify-between">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="md:hidden text-[30px] cursor-pointer">
+      <i class="fas fa-bars text-[#2855de]"></i>
+    </label>
+    
+    <!-- Mobile Menu -->
+    <div class="fixed top-0 left-0 h-full w-[90%] max-w-[320px] bg-[#ffffff] text-white flex flex-col items-start justify-start pl-[20px] pr-[20px] pt-[20px] pb-[40px] gap-8 transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-500 ease-in-out peer-checked:shadow-[0_0_20px_rgba(0,0,0,0.4)] z-[999] overflow-y-auto">
+      
+      <div class="flex items-center justify-between w-full border-b border-gray-400 pb-3">
+        <a href="./index.html">
+          <img src="./img/article-original.png" alt="Logo" class="w-32" />
+        </a>
+        <label for="menu-toggle" class="text-[30px] sm:text-[38px] md:text-[40px] cursor-pointer transition-opacity duration-300 ease-in-out">
+          <i class="fas fa-xmark text-[#444]"></i>
+        </label>
+      </div>
+      
+      <div class="flex flex-col items-start gap-5 w-full">
+        <div class="flex gap-2 items-center cursor-pointer group transition-all duration-300">
+          <a href="#"><img src="./images/photo_2025-10-30_14-22-13.jpg" alt="" class="w-5 h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+          <h1 class="text-[#444] text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Сравнение</h1>
+        </div>
+        
+        <div class="flex items-center gap-2 cursor-pointer group transition-all duration-300">
+          <a href="#"><img src="./images/photo_2025-10-30_14-36-52.jpg" alt="" class="w-5 h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+          <h1 class="text-[#444] text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Оплатить</h1>
+        </div>
+        
+        <div class="flex gap-2 items-center cursor-pointer group transition-all duration-300">
+          <a href="#"><img src="./images/photo_2025-10-30_14-43-45.jpg" alt="" class="w-5 h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+          <h1 class="text-[#444] text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Отследить</h1>
+        </div>
+        
+        <div class="flex items-center gap-2 cursor-pointer group relative">
+          <a href="cart.html" class="flex items-center gap-2">
+            <img src="./images/photo_2025-10-30_14-46-41.jpg" alt="" class="w-5 h-5 sm:w-6 sm:h-6" />
+            <span class="text-xs text-[#444] sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Корзина</span>
+          </a>
+          <span id="cart-counter-mobile" class="absolute -top-2 left-3 bg-blue-600 text-white text-[10px] sm:text-xs w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full">0</span>
+        </div>
+        
+        <div class="flex items-center gap-2 cursor-pointer group transition-all duration-300">
+          <a href="./favorites.html" class="flex items-center gap-2 relative">
+            <img src="./images/photo_2025-10-30_14-48-56.jpg" alt="" class="w-5 h-5 transform transition-transform duration-300 group-hover:scale-110" />
+            <h1 class="text-xs text-[#444] sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Избранное</h1>
+            <span id="favorites-counter-mobile" class="absolute -top-2 left-3 bg-blue-600 text-white text-[10px] sm:text-xs w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full">0</span>
+          </a>
+        </div>
+        
+        <div class="flex gap-2 items-center cursor-pointer group transition-all duration-300">
+          <a href="#"><img src="./images/photo_2025-10-30_14-50-06.jpg" alt="" class="w-5 h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+          <h1 class="text-[#444] text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">O'zbekcha</h1>
+        </div>
+        
+        <div class="flex gap-2 items-center cursor-pointer group transition-all duration-300">
+          <a href="#"><img src="./images/photo_2025-10-30_14-51-19.jpg" alt="" class="w-5 h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+          <h1 class="text-[#444] text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Войти</h1>
+        </div>
+      </div>
+      
+      <div class="flex flex-col items-start w-full gap-4">
+        <button class="bg-blue-600 cursor-pointer text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg font-medium text-sm sm:text-base flex items-center space-x-1 sm:space-x-2">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span>Категории</span>
+        </button>
+
+        <div class="flex items-center w-full">
+          <input id="menu-search-input" type="text" placeholder="Поиск..." class="border-2 text-[#444] border-blue-600 border-r-0 rounded-l-lg px-3 py-1.5 sm:px-4 sm:py-2 w-full text-sm sm:text-base focus:outline-none focus:border-blue-700" />
+          <button class="bg-blue-600 flex items-center cursor-pointer text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-r-lg font-medium text-sm sm:text-base border-2 border-blue-600">Искать</button>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-5 justify-center mx-auto">
+        <i class="fa-brands fa-instagram text-[#2855de] text-[30px]"></i>
+        <i class="fa-brands fa-telegram text-[#2855de] text-[30px]"></i>
+        <i class="fa-brands fa-facebook text-[#2855de] text-[30px]"></i>
+      </div>
+    </div>
+    
+    <!-- Mobile Logo -->
+    <a href="./index.html">
+      <img src="./images/photo_2025-10-30_14-26-21.jpg" alt="Logo" class="md:hidden block w-32" />
+    </a>
+  </div>
+  
+  <!-- Desktop Menu -->
+  <div class="max-w-[1550px] w-[90%] mx-auto px-2 sm:px-4 py-2 sm:py-3 hidden md:flex flex-wrap items-center justify-between gap-2 sm:gap-5">
+    <div class="flex items-center space-x-2">
+      <a href="./index.html">
+        <img src="./images/photo_2025-10-30_14-26-21.jpg" alt="Logo" class="w-auto h-10" />
+      </a>
+    </div>
+    
+    <button class="bg-blue-600 cursor-pointer text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg font-medium text-sm sm:text-base flex items-center space-x-1 sm:space-x-2">
+      <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <span>Категории</span>
+    </button>
+    
+    <div class="flex items-center grow max-w-md min-w-[200px]">
+      <input type="text" id="search-input" placeholder="Поиск..." class="border-2 border-blue-600 border-r-0 rounded-l-lg px-3 py-1.5 sm:px-4 sm:py-2 w-full h-9 sm:h-10 text-sm sm:text-base focus:outline-none focus:border-blue-700" />
+      <button id="search-btn" class="bg-blue-600 flex items-center cursor-pointer text-white px-3 py-1.5 sm:px-4 sm:py-2 h-9 sm:h-10 rounded-r-lg font-medium text-sm sm:text-base border-2 border-blue-600">Искать</button>
+    </div>
+    
+    <div class="flex items-center space-x-3 sm:space-x-6 flex-wrap justify-end">
+      <div class="flex flex-col items-center cursor-pointer group transition-all duration-300">
+        <a href="#"><img src="./images/photo_2025-10-30_14-22-13.jpg" alt="" class="w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+        <h1 class="text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Сравнение</h1>
+      </div>
+      
+      <div class="flex flex-col items-center cursor-pointer group transition-all duration-300">
+        <a href="#"><img src="./images/photo_2025-10-30_14-36-52.jpg" alt="" class="w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+        <h1 class="text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Оплатить</h1>
+      </div>
+      
+      <div class="flex flex-col items-center cursor-pointer group transition-all duration-300">
+        <a href="#"><img src="./images/photo_2025-10-30_14-43-45.jpg" alt="" class="w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+        <h1 class="text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Отследить</h1>
+      </div>
+      
+      <div class="flex flex-col items-center cursor-pointer group relative">
+        <a href="cart.html" class="flex flex-col items-center">
+          <img src="./images/photo_2025-10-30_14-46-41.jpg" alt="" class="w-4 h-4 sm:w-5 sm:h-5" />
+          <span class="text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Корзина</span>
+          <span id="cart-counter-desktop" class="absolute -top-2 right-0 bg-blue-600 text-white text-[10px] sm:text-xs w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full">0</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center cursor-pointer group transition-all duration-300 relative">
+        <a href="./favorites.html" class="flex flex-col items-center">
+          <img src="./images/photo_2025-10-30_14-48-56.jpg" alt="" class="w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 group-hover:scale-110" />
+          <h1 class="text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Избранное</h1>
+          <span id="favorites-counter-desktop" class="absolute -top-2 right-0 bg-blue-600 text-white text-[10px] sm:text-xs w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center rounded-full">0</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center cursor-pointer group transition-all duration-300">
+        <a href="#"><img src="./images/photo_2025-10-30_14-50-06.jpg" alt="" class="w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+        <h1 class="text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">O'zbekcha</h1>
+      </div>
+      
+      <div class="flex flex-col items-center cursor-pointer group transition-all duration-300">
+        <a href="#"><img src="./images/photo_2025-10-30_14-51-19.jpg" alt="" class="w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 group-hover:scale-110" /></a>
+        <h1 class="text-xs sm:text-sm font-medium transition-colors duration-300 group-hover:text-blue-600">Войти</h1>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom Navigation -->
+  <div class="border-gray-200 md:block hidden border-t mt-2">
+    <div class="max-w-[1550px] mx-auto w-[90%] flex gap-2 sm:gap-5 items-center justify-between mt-2 p-1 sm:p-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">Супер цена</a>
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">0-0-6</a>
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">Лучшее для студентов</a>
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">Смартфоны</a>
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">Бытовая техника</a>
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">Книги</a>
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">Телевизоры</a>
+      <a href="#" class="text-xs sm:text-sm transition-colors duration-300 hover:text-blue-600">Ноутбуки</a>
+    </div>
+  </div>
+</header>
+    <section class="w-[90%] max-w-[1550px] mx-auto mt-10">
+      <h1 class="text-2xl font-semibold mb-4">Избранное</h1>
+      <div id="favorites-items" class="grid gap-4"></div>
+    </section>
+
+    <script src="./main.js"></script>
+    <script src="./cart.js"></script>
+    <script src="./favorites.js"></script>
+  </body>
+</html>
